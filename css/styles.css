@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*NAVBAR starts*/
+
+#navbar {
+    transition: top 0.3s;
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+    background: black;
+    z-index: 1;
+    border-bottom: 1px solid #1098F7;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #F1F7EE;
+    margin: 2rem;
+}
+
+/*NAVBAR ends*/
+
+/*SHOWCASE starts*/
+
+.showcase {
+    height: 100vh;
+}
+
+.showcase__img {
+    background-image: url('../img/gray-laptop-computer-showing-html-codes-in-shallow-focus-160107.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    filter: blur(2px);
+}
+
+.showcase__content {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    color: #F1F7EE;
+}
+
+.showcase__content h1 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.showcase__content h2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@media only screen and (max-width: 800px){
+    .showcase__content h1{
+        font-size: 24px;
+    }
+    .showcase__content h2{
+        font-size: 20px;
+    }
+}
+
+.txt-type>.txt {
+    border-right: 0.2rem solid #F1F7EE;
+}
+
+/*SHOWCASE ends*/
+
+/*ABOUT starts*/
+.about {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about__profile {
+    display: grid;
+    justify-items: center;
+    margin: 4rem;
+}
+
+.about__card{
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 200px;
+}
+
+.about__card img {
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
+.about__who{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__who h3{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.about__contact{
+    color: #ccc;
+    margin: 1rem;
+}
+
+.about__card-footer{
+    background-color: black;
+}
+
+@media only screen and (max-width: 1024px){
+    .about__profile{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-title {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .about__who{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+}
+
+/*ABOUT endss*/
+
+/*MYWORK starts*/
+
+.portfolio{
+    background: #EEF4D4;
+}
+
+.portfolio-title{
+    text-align: center;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.my-work {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+}
+
+.my-work__card {
+    text-align: center;
+}
+
+.card-img {
+    max-height: 400px;
+    max-width: 300px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card__body{
+    text-decoration: none;
+    color: black;
+}
+
+.card__code{
+    text-decoration: none;
+    color: #1098F7;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .my-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        transition: none;
+        box-shadow: 0 0 0;
+        margin-bottom: 1rem;
+    }
+
+    .card:hover {
+        transform: scale(1);
+    }
+
+}
+
+/*MYWORK ends*/
+
+/*CONTACT starts*/
+
+.contact {
+    background-color: #cccc;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    font-size: 30px;
+    margin: 1rem;
+    transition: .1s;
+}
+
+.contact__link:hover {
+    font-size: 35px;
+}
+
+.contact__mail{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: rgb(53, 53, 53);
+}
+
+/*CONTACT ends*/
